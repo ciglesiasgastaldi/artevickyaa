@@ -5,21 +5,52 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://fonts.googleapis.com/css2?family=Krub&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">      
+<link rel="stylesheet" href="../css/style.css">
       <title>Contacto</title>
       <meta name="description" content="Artista Plástica, Muralista, Ilustradora y profesora de Dibujo y Pintura.">
   </head>
   <body>
     
     <header>
-      <h1>VickyAA Artista Plástica</h1>
-      <nav class="navegacion-principal contenedor">
-        <a href="../index.html">Home</a>
-        <a href="tecnicas.html">Técnicas</a>
-        <a href="galeria.html">Galería</a>
-        <a href="acerca-de.html">Acerca De</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
+       <!-- topbar Nav -->
+	<nav class="container-fluid navbar navbar-light bg-light fixed-top">
+		<div class="container-fluid w-100">
+			<a class="navbar-brand" href="index.html">
+				<img class="logo w-25 p-2" src="" alt="Logo">
+				<span>VickyAA - Artista Plástica</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header d-block">
+					<button type="button" class="d-block btn-close btn-close text-reset blue" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./tecnicas.html">Técnicas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./acerca-de.html">Acerca De</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./galeria.html">Galería</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contacto.html">Contacto</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+<!-- Ends Nav -->
     </header>
     
     <section>
@@ -65,8 +96,7 @@
   </footer>
 
   <!--JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
   </body>
 </html>
