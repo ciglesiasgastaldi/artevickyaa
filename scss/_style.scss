@@ -6,8 +6,7 @@
   
   /* Paleta de colores */
   
-  
-  
+ 
   
   /* Fuente y tipografia */
   
@@ -23,10 +22,13 @@
   h1 {
     padding: 15px;
     color: wheat;
-    font-weight: bold;
+    font-weight: bold; 
+    
     
     
   }
+
+  
 
 // Header
 header {
@@ -38,7 +40,8 @@ header {
       }
     }
   }
-  
+
+
   
   
   
@@ -130,10 +133,7 @@ section {
 // }
 
   
-  .parrafovicky{
-    text-align: left;
-    
-  }
+ 
   
   header, footer{
     padding: 25px;
@@ -141,11 +141,9 @@ section {
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   }
   
-  footer{
-    position: relative;
-    bottom: 0;
-    text-align: center;
-  }
+
+
+
   
   /* Acerca De */
   .fotovicky {
@@ -154,6 +152,19 @@ section {
     border: 2px none;
     float: left;
     width: 250px;
+  } 
+  
+  .parrafovicky{
+    text-align: left;
+    
+  }
+
+  .vickypinta {
+    
+    padding: 50px;
+    margin: 50px;
+   
+
   }
 
   /*Galeria*/ 

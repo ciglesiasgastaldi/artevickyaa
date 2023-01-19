@@ -1,5 +1,21 @@
 // Footer 
+footer {
+  position: relative;
+  bottom: 0;
+  max-height: 150px;
+  padding: 2rem;
+  z-index: 6;
+}
 
+footer .redes .icon {
+max-width: 4rem;
+transition: none;
+}
+
+footer .redes img {
+margin-left: 15px;
+
+}
 
 
 
