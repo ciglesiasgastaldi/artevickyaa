@@ -154,12 +154,15 @@ header, footer {
   float: left;
   width: 250px; }
 
-.parrafovicky {
+p .parrafovicky {
   text-align: left; }
 
-.vickypinta {
-  padding: 50px;
-  margin: 50px; }
+img .my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important; }
+
+img .w-50 {
+  width: 50% !important; }
 
 /*Galeria*/
 img {

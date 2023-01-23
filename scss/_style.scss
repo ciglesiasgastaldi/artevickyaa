@@ -28,6 +28,7 @@
     
   }
 
+
   
 
 // Header
@@ -38,6 +39,7 @@ header {
           width: 50px ;
         }
       }
+      
     }
   }
 
@@ -98,6 +100,8 @@ section {
   flex-direction: column;
   align-items: center;
 
+  
+
 }
 
 
@@ -153,19 +157,32 @@ section {
     float: left;
     width: 250px;
   } 
-  
+
+  p {
+
   .parrafovicky{
     text-align: left;
     
   }
 
-  .vickypinta {
+  }
+
+  img {
+
+    .my-5 {
+      margin-top: 3rem!important;
+      margin-bottom: 3rem!important;
+  }
+  .w-50 {
+      width: 50%!important;
+  }
     
-    padding: 50px;
-    margin: 50px;
+    
+  }
+  
    
 
-  }
+  
 
   /*Galeria*/ 
   
