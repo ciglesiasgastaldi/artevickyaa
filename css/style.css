@@ -5,7 +5,7 @@
   margin: 0; }
 
 .bg-deep-blue {
-  background-color: #eeaeca; }
+  background-color: #ddc18c; }
 
 .bg-lite {
   background-color: #800080; }
@@ -45,8 +45,10 @@ footer {
     text-decoration: none; }
   footer nav .redes .icon {
     max-width: 2rem;
-    transition: none;
-    margin-left: 15px; }
+    margin-left: 15px;
+    transition: transform .5s; }
+    footer nav .redes .icon:hover {
+      transform: scale(1.1); }
   @media screen and (max-width: 768px) {
     footer {
       flex-direction: column;
@@ -70,7 +72,7 @@ h1, h2, h3, h4, h5 {
   color: #800080; }
 
 h1 {
-  padding: 15px;
+  padding: 30px;
   color: #f5deb3;
   font-weight: bold;
   font-size: 4rem; }
@@ -127,6 +129,8 @@ section {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed; }
+  .hero h5 {
+    color: #f5deb3; }
 
 .carousel h5 {
   color: #ffffff; }
@@ -138,6 +142,9 @@ section {
   background-color: grey;
   border-radius: 100%;
   padding: 5px; }
+
+a {
+  text-decoration: none; }
 
 /* Mis Servicios */
 .carta-container {
@@ -162,7 +169,10 @@ section {
   margin: 10px;
   border: 2px none;
   float: left;
-  width: 250px; }
+  width: 250px;
+  transition: transform .5s; }
+  #acerca-de .foto-vicky:hover {
+    transform: scale(1.1); }
 
 #acerca-de .parrafo-vicky {
   text-align: left;
@@ -188,14 +198,21 @@ section {
     padding: 0.5rem; }
   .gallery-contenedor .gallery__img {
     object-fit: cover;
-    width: 250px;
-    height: 250px; }
-  @media screen and (max-width: 768px) {
-    .gallery-contenedor {
-      grid-template-columns: repeat(2, 1fr); } }
-  @media screen and (max-width: 576px) {
-    .gallery-contenedor {
-      grid-template-columns: repeat(1, 1fr); } }
+    width: 350px;
+    height: 350px;
+    transition: transform .5s; }
+    .gallery-contenedor .gallery__img:hover {
+      transform: scale(1.1); }
+  .gallery-contenedor .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 3rem; }
+    @media screen and (max-width: 768px) {
+      .gallery-contenedor .modal-body {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (max-width: 576px) {
+      .gallery-contenedor .modal-body {
+        grid-template-columns: repeat(1, 1fr); } }
 
 /* Contacto */
 form {

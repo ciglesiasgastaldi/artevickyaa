@@ -6,7 +6,6 @@
   
   /* Paleta de colores */
   
- 
   
   /* Fuente y tipografia */
   
@@ -21,7 +20,7 @@
   
   h1 {
     
-    padding: 15px;
+    padding: 30px;
     color: $wheat;
     font-weight: bold; 
     font-size: $textXl;
@@ -98,6 +97,9 @@ header {
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
+    h5{
+      color: $wheat;
+    }
   }
 
 .carousel {
@@ -114,6 +116,12 @@ header {
     border-radius: 100%;
     padding: 5px;
   }
+}
+
+a{
+
+  text-decoration: none;
+  
 }
 
 /* Mis Servicios */
@@ -147,7 +155,11 @@ header {
       border: 2px none;
       float: left;
       width: 250px;
+      transition: transform .5s;
+      &:hover{
+        transform:scale(1.1);
     } 
+  }
   
     .parrafo-vicky{
       text-align: left;
@@ -181,17 +193,26 @@ header {
     }
     .gallery__img {
       object-fit: cover;
-      width: 250px;
-      height: 250px;
+      width: 350px;
+      height: 350px;
+      transition: transform .5s;
+      &:hover{
+        transform:scale(1.1);
+    }
     }  
-
-    @include mediumScreen {
+    .modal-body {
+      position: relative;
+      flex: 1 1 auto;
+      padding: 3rem;
+  
+      @include mediumScreen {
       grid-template-columns: repeat(2, 1fr);
     }
 
     @include mobileScreen {
       grid-template-columns: repeat(1, 1fr);
     }
+  }
   }
 
 /* Contacto */
