@@ -1,6 +1,11 @@
 // Variables
+$fullWidth: 100%;
 
 // Colours
+$purple: #800080;
+$white:#ffffff;
+$wheat: #f5deb3;
+
 
 $mainColor: #fff;
 $secondaryColor: #022F40;
@@ -32,8 +37,8 @@ $palette: (
 }
 
 // Border-Radius
-$secBorderRadius: 5px;
-$mainBorderRadius: 10px;
+$borderRadius: 5px;
+$secBorderRadius: 15px;
 
 // Scrollbar
 ::-webkit-scrollbar {
@@ -46,14 +51,14 @@ $mainBorderRadius: 10px;
 
 	&:hover {
 		border: 1px solid rgb(184, 184, 184);
-		border-radius: $mainBorderRadius;
+		border-radius: $borderRadius;
 		// background: rgb(214, 214, 214);
 	}
 }
 
 ::-webkit-scrollbar-thumb {
 	background: rgba(51, 51, 51, 0.2);
-	border-radius: $mainBorderRadius;
+	border-radius: $borderRadius;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
