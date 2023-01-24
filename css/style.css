@@ -54,7 +54,7 @@ footer {
       flex-direction: column;
       align-items: flex-start; }
       footer h5 {
-        font-size: 1rem; }
+        font-size: 1.25rem; }
       footer nav {
         flex-direction: column; }
         footer nav .redes .icon {
@@ -78,7 +78,10 @@ h1 {
   font-size: 4rem; }
 
 header nav .navbar-brand .logo {
-  width: 50px; }
+  width: 50px;
+  transition: transform .5s; }
+  header nav .navbar-brand .logo:hover {
+    transform: scale(1.1); }
 
 /* Layout */
 body {
@@ -163,6 +166,13 @@ a {
     .carta-container .card:hover {
       cursor: pointer; }
 
+#tecnicas h3 {
+  font-size: 2.5rem; }
+
+#tecnicas p {
+  color: #800080;
+  font-size: 1.25rem; }
+
 #tecnicas .img-tecnicas {
   padding: 10px;
   margin: 10px;
@@ -187,7 +197,7 @@ a {
 #acerca-de .parrafo-vicky {
   text-align: left;
   color: #800080;
-  font-size: 1rem; }
+  font-size: 1.25rem; }
 
 .img-galeria {
   width: 250px;
@@ -241,7 +251,7 @@ form {
     padding: 5px; }
   form .button {
     border-radius: 5px;
-    background-color: #ff7b7b;
+    background-color: #ffffff;
     padding: 5px; }
     form .button:hover {
       padding: 10px;
