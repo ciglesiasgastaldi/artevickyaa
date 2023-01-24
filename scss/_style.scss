@@ -146,6 +146,22 @@ a{
   }
 }
 
+// Técnicas
+
+    #tecnicas{
+      .img-tecnicas{
+        padding: 10px;
+        margin: 10px;
+        border: 2px none;
+        float: left;
+        width: 400px;
+        transition: transform .5s;
+          &:hover{
+            transform:scale(1.1);
+        } 
+      }
+    }
+
   /* Acerca De */
 
   #acerca-de{
