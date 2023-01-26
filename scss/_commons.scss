@@ -1,14 +1,19 @@
-// Variables
-$fullWidth: 100%;
+// Bootstrap modal reset
+
+.modal-dialog {
+  translate: -50% -50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  margin: 0;
+  pointer-events: none;
+}
 
 // Colours
 $purple: #800080;
 $white:#ffffff;
 $wheat: #f5deb3;
-
-
-
-
 $mainColor: #fff;
 $secondaryColor: #022F40;
 $hightlightColor:#41a2c2;
