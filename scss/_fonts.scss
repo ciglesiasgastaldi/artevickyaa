@@ -1,0 +1,31 @@
+
+/* Fuente y tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Krub&display=swap');
+
+$fontMain: 'Krub', sans-serif;
+
+// fonts
+
+$textXl: 4rem;
+$textLg: 3.5rem;
+$textMd: 2.5rem;
+$textSm: 1.25rem;
+$textXSm: 1rem;
+
+h1, h2, h3, h4, h5 {
+  color: $purple;
+}
+
+h1 {
+  padding: 30px;
+  color: $fontColor;
+  font-weight: bold; 
+  font-size: $textXl;
+  margin: 2rem 0;
+}
+
+h2 {
+  color: $fontColor;
+  font-weight: bold; 
+  font-size: $textMd;
+}

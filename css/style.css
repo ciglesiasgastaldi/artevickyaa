@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+.modal-dialog {
+  translate: -50% -50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  margin: 0;
+  pointer-events: none; }
+
+.bg-deep-blue {
+  background-color: #ddc18c; }
+
+.bg-lite {
+  background-color: #800080; }
+
+.bg-gradient-deep {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.658), rgba(252, 252, 252, 0.03)); }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+::-webkit-scrollbar-track {
+  background: white; }
+  ::-webkit-scrollbar-track:hover {
+    border: 1px solid #b8b8b8;
+    border-radius: 5px; }
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 51, 51, 0.2);
+  border-radius: 5px; }
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #254E70; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c75a6e; }
+
+/* Fuente y tipografia */
+h1, h2, h3, h4, h5 {
+  color: #800080; }
+
+h1 {
+  padding: 30px;
+  color: #c75a6e;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 2rem 0; }
+
+h2 {
+  color: #c75a6e;
+  font-weight: bold;
+  font-size: 2.5rem; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  max-height: 150px;
+  padding: 2rem;
+  z-index: 6; }
+  footer h5 {
+    font-size: 1rem; }
+  footer nav .redes a {
+    text-decoration: none; }
+  footer nav .redes .icon {
+    max-width: 2rem;
+    margin-left: 15px;
+    transition: transform .5s; }
+    footer nav .redes .icon:hover {
+      transform: scale(1.1); }
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      align-items: flex-start; }
+      footer h5 {
+        font-size: 1.25rem; }
+      footer nav {
+        flex-direction: column; }
+        footer nav .redes .icon {
+          max-width: 2rem; } }
+
+/* Generales */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Layout */
+body {
+  font-family: "Krub", sans-serif;
+  background-image: url("../assets/images/section-bg.jpg");
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 100vh; }
+
+header, footer {
+  padding: 25px; }
+
+section {
+  margin-top: 30px;
+  min-height: calc(100vh - 60px);
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.content {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+a {
+  text-decoration: none;
+  transition: transform .5s; }
+  a .nav-link {
+    padding: 0;
+    width: fit-content;
+    height: fit-content; }
+  a:hover {
+    transform: scale(1.1); }
+    a:hover h2 {
+      color: #41a2c2; }
+
+header nav .navbar-brand {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+  header nav .navbar-brand .logo {
+    width: 50px;
+    transition: transform .5s; }
+    header nav .navbar-brand .logo:hover {
+      transform: scale(1.1); }
+
+.hero {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url("../assets/images/bg.jpg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .hero h5 {
+    color: #f5deb3; }
+
+.carousel h5 {
+  color: #ffffff; }
+
+.carousel img {
+  height: 80vh;
+  width: 350px;
+  object-fit: cover; }
+
+.acerca-de .container .vicky-pinta {
+  width: 40%; }
+
+/* Mis Servicios */
+.carta-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between; }
+  .carta-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15rem;
+    width: 15rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .carta-container {
+      flex-direction: column; }
+      .carta-container .card {
+        width: 100%; } }
+
+#tecnicas h3 {
+  font-size: 2.5rem; }
+
+#tecnicas .tecnicas-text-left {
+  text-align: left; }
+
+#tecnicas .tecnicas-text-right {
+  text-align: right; }
+
+#tecnicas .img-tecnicas {
+  padding: 10px;
+  margin: 10px;
+  border: 2px none;
+  float: left;
+  width: 400px;
+  transition: transform .5s; }
+  #tecnicas .img-tecnicas:hover {
+    transform: scale(1.1); }
+
+/* Acerca De */
+#acerca-de .foto-vicky {
+  margin-right: 20px;
+  height: 250px; }
+
+#acerca-de .parrafo-vicky {
+  text-align: left;
+  color: #800080;
+  font-size: 1rem; }
+
+.img-galeria {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  transition: transform .5s; }
+  .img-galeria:hover {
+    transform: scale(1.1); }
+
+/*Galeria*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  grid-auto-flow: row dense; }
+  .gallery-container .gallery-item {
+    padding: 0.5rem; }
+  .gallery-container .gallery__img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    transition: transform .5s;
+    filter: grayscale(100%); }
+    .gallery-container .gallery__img:hover {
+      transform: scale(1.1);
+      filter: grayscale(0%); }
+    .gallery-container .gallery__img.modal-img {
+      width: auto;
+      height: 70vh;
+      filter: grayscale(0%); }
+      .gallery-container .gallery__img.modal-img:hover {
+        transform: scale(1); }
+  .gallery-container .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 3rem; }
+  @media screen and (max-width: 768px) {
+    .gallery-container {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 576px) {
+    .gallery-container {
+      grid-template-columns: repeat(1, 1fr); } }
+
+/* Contacto */
+.data .mapa iframe {
+  max-width: 250px;
+  max-height: 250px; }
+
+form {
+  padding: 15px;
+  background-color: rgba(240, 183, 119, 0.568);
+  border-radius: 15px;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 15px; }
+  form div {
+    padding: 5px 0; }
+    form div .text-area {
+      height: 180px; }
+  form input, form textarea {
+    border-radius: 5px;
+    width: 90%;
+    background-color: #ffffff;
+    padding: 5px; }
+  form .button {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 5px; }
+    form .button:hover {
+      padding: 10px;
+      color: darkcyan; }
