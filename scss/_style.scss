@@ -192,8 +192,11 @@ header {
 }
 
 // Home gallery
+
 .img-galeria{
-  width: 300px;
+
+  width: 100%;
+  max-width: 300px;
   height: auto;
   object-fit: contain;
   aspect-ratio: 1/1;
