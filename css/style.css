@@ -42,8 +42,12 @@
   background: #c75a6e; }
 
 /* Fuente y tipografia */
-h1, h2, h3, h4, h5 {
-  color: #800080; }
+h2, h3, h4, h5 {
+  color: #800080;
+  padding: 4px 2rem; }
+  @media screen and (max-width: 768px) {
+    h2, h3, h4, h5 {
+      font-size: 1.25rem; } }
 
 h1 {
   padding: 30px;
@@ -51,6 +55,9 @@ h1 {
   font-weight: bold;
   font-size: 4rem;
   margin: 2rem 0; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem; } }
 
 h2 {
   color: #c75a6e;
@@ -121,7 +128,11 @@ section {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      flex-direction: column; } }
 
 a {
   text-decoration: none;
@@ -173,7 +184,7 @@ header nav .navbar-brand {
 .acerca-de .container .vicky-pinta {
   width: 40%; }
 
-/* Mis Servicios */
+/* Home Mis Servicios */
 .carta-container {
   width: 80%;
   display: flex;
@@ -195,52 +206,62 @@ header nav .navbar-brand {
       .carta-container .card {
         width: 100%; } }
 
+#servicios h3 {
+  font-size: 2.5rem; }
+
+#servicios .img-servicios {
+  margin: 10px;
+  border: 2px none;
+  object-fit: contain;
+  float: left;
+  max-height: 40vh;
+  width: auto;
+  transition: transform .5s; }
+  #servicios .img-servicios:hover {
+    transform: scale(1.1); }
+  @media screen and (max-width: 768px) {
+    #servicios .img-servicios {
+      width: 75%; } }
+
 #tecnicas h3 {
   font-size: 2.5rem; }
 
-#tecnicas .tecnicas-text-left {
-  text-align: left; }
-
-#tecnicas .tecnicas-text-right {
-  text-align: right; }
-
 #tecnicas .img-tecnicas {
-  padding: 10px;
   margin: 10px;
   border: 2px none;
+  object-fit: contain;
   float: left;
-  width: 400px;
+  max-height: 40vh;
+  width: auto;
   transition: transform .5s; }
   #tecnicas .img-tecnicas:hover {
     transform: scale(1.1); }
+  @media screen and (max-width: 768px) {
+    #tecnicas .img-tecnicas {
+      width: 75%; } }
 
 /* Acerca De */
 #acerca-de .foto-vicky {
   margin-right: 20px;
   height: 350px; }
 
-.galeria-container .wrapper {
+.galeria-container .img-galeria {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between; }
-  .galeria-container .wrapper .img-galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 300px;
-    height: auto;
-    object-fit: contain;
-    aspect-ratio: 1/1;
-    transition: transform .5s; }
-    .galeria-container .wrapper .img-galeria:hover {
-      transform: scale(1.1); }
-    @media screen and (max-width: 768px) {
-      .galeria-container .wrapper .img-galeria {
-        flex-direction: column; }
-        .galeria-container .wrapper .img-galeria .img-galeria {
-          width: 100%; } }
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  transition: transform .5s; }
+  .galeria-container .img-galeria:hover {
+    transform: scale(1.1); }
+  @media screen and (max-width: 768px) {
+    .galeria-container .img-galeria {
+      flex-direction: column; }
+      .galeria-container .img-galeria .img-galeria {
+        width: 100%; } }
 
 /*Galeria*/
 .gallery-container {

@@ -42,6 +42,11 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+
+  @include mediumScreen {
+    flex-direction: column;
+  }
 }
 
 a {
@@ -111,7 +116,6 @@ header {
   width: 350px;
   object-fit: cover;
   }
-
 }
 
 // Home Acerca De
@@ -124,7 +128,7 @@ header {
   }
 }
 
-/* Mis Servicios */
+/* Home Mis Servicios */
 
 .carta-container {
   width: 80%;
@@ -155,30 +159,51 @@ header {
   }
 }
 
-// Técnicas
-#tecnicas{
+// Mis Servicios
+
+ #servicios {
   h3{ 
     font-size: $textMd;
-    }
+    } 
 
-  .tecnicas-text-left {
-    text-align: left;
-  }
-
-  .tecnicas-text-right {
-    text-align: right;
-  }
-
-  .img-tecnicas{
-    padding: 10px;
+  .img-servicios{
     margin: 10px;
     border: 2px none;
+    object-fit: contain;
     float: left;
-    width: 400px;
+    max-height: 40vh;
+    width: auto;
     transition: transform .5s;
     &:hover{
       transform:scale(1.1);
     } 
+    @include mediumScreen {
+      width: 75%;
+    }
+  }
+
+ }
+
+// Técnicas
+#tecnicas{
+  h3{ 
+    font-size: $textMd;
+    } 
+
+  .img-tecnicas{
+    margin: 10px;
+    border: 2px none;
+    object-fit: contain;
+    float: left;
+    max-height: 40vh;
+    width: auto;
+    transition: transform .5s;
+    &:hover{
+      transform:scale(1.1);
+    } 
+    @include mediumScreen {
+      width: 75%;
+    }
   }
 }
 
@@ -194,12 +219,6 @@ header {
 // Home gallery
 
 .galeria-container{
-  .wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    
      .img-galeria{
       display: flex;
       flex-direction: column;
@@ -222,7 +241,7 @@ header {
        }
     }
   }
-}
+
 
 
 

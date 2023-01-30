@@ -12,8 +12,15 @@ $textMd: 2.5rem;
 $textSm: 1.25rem;
 $textXSm: 1rem;
 
-h1, h2, h3, h4, h5 {
+ h2, h3, h4, h5 {
   color: $purple;
+ padding: 4px 2rem;
+
+  @include mediumScreen {
+    font-size: $textSm;
+    
+    
+  }
 }
 
 h1 {
@@ -22,6 +29,10 @@ h1 {
   font-weight: bold; 
   font-size: $textXl;
   margin: 2rem 0;
+
+  @include mediumScreen {
+    font-size: $textMd;
+  }
 }
 
 h2 {
