@@ -304,15 +304,18 @@ header nav .navbar-brand {
       grid-template-columns: repeat(1, 1fr); } }
 
 /* Contacto */
-.data .mapa iframe {
-  max-width: 250px;
-  max-height: 250px; }
+.data .mapa {
+  width: fit-content;
+  margin: 0 auto; }
+  .data .mapa iframe {
+    max-width: 250px;
+    max-height: 250px; }
 
 form {
   padding: 15px;
   background-color: rgba(240, 183, 119, 0.568);
   border-radius: 15px;
-  width: fit-content;
+  width: 100%;
   margin: 30px auto;
   padding: 15px; }
   form div {
