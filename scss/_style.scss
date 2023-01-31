@@ -157,15 +157,15 @@ header {
 
   @include mediumScreen {
     flex-direction: column;
-     .card {
+    .card {
       width: 100%;
-     }
+    }
   }
 }
 
 // Mis Servicios
 
- #servicios {
+#servicios {
   h3{ 
     font-size: $textMd;
     } 
@@ -185,8 +185,7 @@ header {
       width: 75%;
     }
   }
-
- }
+}
 
 // Técnicas
 #tecnicas{
@@ -227,7 +226,7 @@ header {
 // Home gallery
 
 .galeria-container{
-     .img-galeria{
+    .img-galeria{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -245,8 +244,7 @@ header {
         .img-galeria{
           width: 100%;
         }
-        
-       }
+      }
     }
   }
 
@@ -266,7 +264,7 @@ header {
   }
 
   .gallery__img {
-    object-fit: cover;
+    object-fit: contain;
     width: 200px;
     height: 200px;
     transition: transform .5s;
