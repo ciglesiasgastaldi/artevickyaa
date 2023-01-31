@@ -181,12 +181,14 @@ header nav .navbar-brand {
   width: 350px;
   object-fit: cover; }
 
-.acerca-de .container .vicky-pinta {
-  width: 40%; }
+.acerca-de .vicky-pinta {
+  height: 65vh; }
+  @media screen and (max-width: 768px) {
+    .acerca-de .vicky-pinta {
+      height: 50vh; } }
 
 /* Home Mis Servicios */
 .carta-container {
-  width: 80%;
   display: flex;
   justify-content: space-between; }
   .carta-container .card {
@@ -243,7 +245,11 @@ header nav .navbar-brand {
 /* Acerca De */
 #acerca-de .foto-vicky {
   margin-right: 20px;
-  height: 350px; }
+  height: 350px;
+  padding: 4px 2rem; }
+
+#acerca-de h4 {
+  padding: 0 5rem; }
 
 .galeria-container .img-galeria {
   display: flex;

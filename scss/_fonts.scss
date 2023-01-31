@@ -14,12 +14,10 @@ $textXSm: 1rem;
 
  h2, h3, h4, h5 {
   color: $purple;
- padding: 4px 2rem;
+  padding: 4px 2rem;
 
   @include mediumScreen {
     font-size: $textSm;
-    
-    
   }
 }
 

@@ -121,17 +121,21 @@ header {
 // Home Acerca De
 
 .acerca-de{
-  .container{
+  
     .vicky-pinta{
-      width: 40%;
+      height: 65vh;
+
+      @include mediumScreen {
+        height: 50vh;
+      }
+
     }
   }
-}
+
 
 /* Home Mis Servicios */
 
 .carta-container {
-  width: 80%;
   display: flex;
   justify-content: space-between;
 
@@ -213,6 +217,10 @@ header {
   .foto-vicky {
     margin-right: 20px;
     height: 350px;
+    padding: 4px 2rem;
+  }
+  h4{
+    padding: 0 5rem;
   }
 }
 
